@@ -13,6 +13,27 @@
 
 // LOGIC
 // We start from the leftmost element and keep track of the smaller(or equal) element as i.
+//
+// Algo: partition(arr, low, high)
+// Step 0: 	Start
+// Step 1: 	set pivot = arr[low]
+// Step 2: 	set i = low + 1, j = high
+// Step 3: 	repeat while i < j
+// Step 3.1:		while arr[i] <= pivot, i++
+// Step 3.2:		while arr[j] > pivot, j--
+// Step 3.3:		if i < j, swap(arr[i], arr[j])
+// Step 4: 	swap(arr[low], arr[j])
+// Step 5: 	return j
+// Step 6: 	Stop
+//
+// Algo: quickSort(arr, low, high)
+// Step 0: 	Start
+// Step 1: 	if low < high, then
+// Step 1.1:		partitionIndex = partition(arr, low, high)
+// Step 1.2:		quickSort(arr, low, partitionIndex - 1)
+// Step 1.3:		quickSort(arr, partitionIndex + 1, high)
+// Step 2: 	end if
+// Step 3: 	Stop
 
 int partition(int arr[], int low, int high)
 {

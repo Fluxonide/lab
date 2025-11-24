@@ -14,6 +14,50 @@ struct node* createNode(){
     head->next = head;
     return head;
 }
+//
+// Algo: insertAtBeginning(head, data)
+// Step 0: 	Start
+// Step 1: 	create new node temp, temp.data = data
+// Step 2: 	set ptr = head
+// Step 3: 	while ptr.next != head, ptr = ptr.next
+// Step 4: 	temp.next = head
+// Step 5: 	ptr.next = temp
+// Step 6: 	head = temp
+// Step 7: 	return head
+// Step 8: 	Stop
+//
+// Algo: insert(head, data, loc)
+// Step 0: 	Start
+// Step 1: 	create new node temp, temp.data = data
+// Step 2: 	set ptr = head, i = 1
+// Step 3: 	while i < loc-1, ptr = ptr.next, i++
+// Step 4: 	temp.next = ptr.next
+// Step 5: 	ptr.next = temp
+// Step 6: 	return head
+// Step 7: 	Stop
+//
+// Algo: deleteFirst(head)
+// Step 0: 	Start
+// Step 1: 	set ptr = head, p = head
+// Step 2: 	while ptr.next != head, ptr = ptr.next
+// Step 3: 	head = head.next
+// Step 4: 	ptr.next = head
+// Step 5: 	free(p)
+// Step 6: 	return head
+// Step 7: 	Stop
+//
+// Algo: delete(head, element)
+// Step 0: 	Start
+// Step 1: 	set ptr = head, p
+// Step 2: 	if ptr.data == element
+// Step 2.1:		while ptr.next != head, ptr = ptr.next
+// Step 2.2:		ptr.next = head.next, p = head, head = head.next, free(p), return head
+// Step 3: 	while ptr.next != head
+// Step 3.1:		if ptr.next.data == element, p = ptr.next, ptr.next = p.next, free(p), return head
+// Step 3.2:		else, ptr = ptr.next
+// Step 4: 	print "Element not found"
+// Step 5: 	return head
+// Step 6: 	Stop
 
 void traverse(struct node* head){
     struct node* ptr = head;

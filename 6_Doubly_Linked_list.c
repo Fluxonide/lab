@@ -20,6 +20,46 @@ struct node* createNode(){
     newNode->next = NULL;
     return newNode;
 }
+//
+// Algo: insertAtBeginning(head, data)
+// Step 0: 	Start
+// Step 1: 	create new node temp
+// Step 2: 	temp.data = data, temp.prev = NULL, temp.next = head
+// Step 3: 	head.prev = temp
+// Step 4: 	head = temp
+// Step 5: 	return head
+// Step 6: 	Stop
+//
+// Algo: insert(head, data, loc)
+// Step 0: 	Start
+// Step 1: 	create new node temp, temp.data = data
+// Step 2: 	set ptr = head, p = head, i = 1
+// Step 3: 	if loc == 1, temp.next = head, head.prev = temp, head = temp, return head
+// Step 4: 	while i != loc, p = ptr, ptr = ptr.next, i++
+// Step 5: 	p.next = temp, temp.prev = p
+// Step 6: 	temp.next = ptr, ptr.prev = temp
+// Step 7: 	return head
+// Step 8: 	Stop
+//
+// Algo: deleteFirst(head)
+// Step 0: 	Start
+// Step 1: 	set ptr = head
+// Step 2: 	head = head.next
+// Step 3: 	head.prev = NULL
+// Step 4: 	free(ptr)
+// Step 5: 	return head
+// Step 6: 	Stop
+//
+// Algo: delete(head, element)
+// Step 0: 	Start
+// Step 1: 	set ptr = head, p = head, i = 1
+// Step 2: 	if head.data == element, head = head.next, head.prev = NULL, free(ptr), return head
+// Step 3: 	while ptr != NULL AND ptr.data != element, p = ptr, ptr = ptr.next, i++
+// Step 4: 	ptr.next.prev = p
+// Step 5: 	p.next = ptr.next
+// Step 6: 	free(ptr)
+// Step 7: 	return head
+// Step 8: 	Stop
 
 void traverse(struct node* head){
     struct node* ptr = head;

@@ -1,6 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define size 5
+//
+// Algo: enqueue(Q, front, rear, data)
+// Step 0: 	Start
+// Step 1: 	if (*front == 0 AND *rear == size-1) OR (*front == *rear + 1), print "Overflow"
+// Step 2: 	else
+// Step 2.1:		if *front == -1, *front = 0, *rear = 0, flag = *rear
+// Step 2.2:		else if *rear == size-1, (*front)--, flag = *front
+// Step 2.3:		else, (*rear)++, flag = *rear
+// Step 2.4:		Q[flag] = data
+// Step 3: 	Stop
+//
+// Algo: dequeue(Q, front, rear)
+// Step 0: 	Start
+// Step 1: 	set choice = *rear
+// Step 2: 	if *front == -1 AND *rear == -1, print "Underflow"
+// Step 3: 	else if *front == *rear, *front = *rear = -1
+// Step 4: 	else if *front < *rear AND choice == *rear, (*rear)--
+// Step 5: 	else, (*front)++
+// Step 6: 	Stop
 
 void enqueue(int Q[], int *front, int*rear, int data){
     int flag;

@@ -10,6 +10,18 @@
 // if value is greater than mid, then the array lies b/w mid and high so mid is set as low
 // if the value is less than mid, then the array lies b/w low and mid so the mid is set as high
 // This process is done iteratively until the element is found
+//
+// Algo: binarySearch(arr, size, element)
+// Step 0: 	Start
+// Step 1: 	set low = 0, high = size - 1
+// Step 2: 	while low <= high
+// Step 2.1:		mid = (low + high) / 2
+// Step 2.2:		if arr[mid] == element, return mid
+// Step 2.3:		else if element > arr[mid], low = mid + 1
+// Step 2.4:		else, high = mid - 1
+// Step 3: 	end while
+// Step 4: 	return -1
+// Step 5: 	Stop
 
 int binarySearch(int arr[], int size, int element)
 {

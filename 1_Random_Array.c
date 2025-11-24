@@ -11,6 +11,51 @@
 #include <time.h>
 #define size 100
 
+#define size 100
+//
+// Algo: add(arr)
+// Step 0: 	Start
+// Step 1: 	set sum = 0
+// Step 2: 	repeat for i = 0 to size-1, sum = sum + arr[i]
+// Step 3: 	return sum
+// Step 4: 	Stop
+//
+// Algo: average(sum)
+// Step 0: 	Start
+// Step 1: 	average = sum / size
+// Step 2: 	print average
+// Step 3: 	Stop
+//
+// Algo: displayEven(arr)
+// Step 0: 	Start
+// Step 1: 	repeat for i = 0 to size-1
+// Step 2: 	if arr[i] % 2 == 0, print arr[i]
+// Step 3: 	Stop
+//
+// Algo: displayOdd(arr)
+// Step 0: 	Start
+// Step 1: 	repeat for i = 0 to size-1
+// Step 2: 	if arr[i] % 2 != 0, print arr[i]
+// Step 3: 	Stop
+//
+// Algo: displayPrime(arr)
+// Step 0: 	Start
+// Step 1: 	repeat for i = 0 to size-1
+// Step 2: 	set isPrime = 1
+// Step 3: 	if arr[i] <= 1, isPrime = 0
+// Step 4: 	else, repeat for j = 2 to arr[i]-1
+// Step 4.1:		if arr[i] % j == 0, isPrime = 0, break
+// Step 5: 	if isPrime == 1, print arr[i]
+// Step 6: 	Stop
+//
+// Algo: reverseArr(arr)
+// Step 0: 	Start
+// Step 1: 	set start = 0, end = size - 1
+// Step 2: 	while start < end
+// Step 2.1:		swap(arr[start], arr[end])
+// Step 2.2:		start++, end--
+// Step 3: 	Stop
+
 int add(int arr[]){
     int sum = 0;
     for (int i = 0; i < size; i++)

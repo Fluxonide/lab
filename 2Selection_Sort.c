@@ -7,6 +7,15 @@
 //The algorithm repeatedly selects the smallest element from the unsorted portion of the array and swaps it with the first element of the unsorted part
 //This process is repeated for the remaining unsorted part until the entire array is sorted.
 //Unlike Bubble Sort which pushes the biggest among the unsorted to the sorted part, selection sort pulls the smallest among the sorted part
+//
+// Algo: selectionSort(arr, n)
+// Step 0: 	Start
+// Step 1: 	repeat Step 2 and 3 for i = 0 to n-1
+// Step 2: 	repeat Step 3 for j = i+1 to n
+// Step 3: 	if arr[i] > arr[j], then
+// Step 3.1:		swap(arr[i], arr[j])
+// Step 4: 	end if
+// Step 5: 	Stop
 
 void selectionSort(int arr[], int n){
     for (int i = 0; i < n; i++)

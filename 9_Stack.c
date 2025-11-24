@@ -7,6 +7,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define size 10
+//
+// Algo: push(s, top, data)
+// Step 0: 	Start
+// Step 1: 	if top >= size-1, print "Overflow"
+// Step 2: 	else, top++, s[top] = data
+// Step 3: 	return top
+// Step 4: 	Stop
+//
+// Algo: pop(s, top)
+// Step 0: 	Start
+// Step 1: 	if top < 0, print "Underflow"
+// Step 2: 	else, item = s[top], top--, print item
+// Step 3: 	return top
+// Step 4: 	Stop
+//
+// Algo: peep(s, top)
+// Step 0: 	Start
+// Step 1: 	if top < 0, print "Stack is empty"
+// Step 2: 	else, print s[top]
+// Step 3: 	Stop
 
 int push(int s[], int top, int data){
     if (top>=size-1)

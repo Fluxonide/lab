@@ -11,6 +11,28 @@
 #define M 3
 #define N 3
 
+#define N 3
+//
+// Algo: Matrix Operations
+// Step 0: 	Start
+// Step 1: 	Initialize arr1 and arr2
+// Step 2: 	Traverse and print arr1 and arr2
+// Step 3: 	Add arr1 and arr2:
+// Step 3.1:		repeat for i = 0 to M-1
+// Step 3.2:		repeat for j = 0 to N-1
+// Step 3.3:		arr1[i][j] += arr2[i][j]
+// Step 4: 	Transpose arr2:
+// Step 4.1:		repeat for j = 0 to N-1
+// Step 4.2:		repeat for i = 0 to M-1
+// Step 4.3:		print arr2[i][j]
+// Step 5: 	Multiply arr1 and arr2:
+// Step 5.1:		repeat for i = 0 to M-1
+// Step 5.2:		repeat for j = 0 to N-1
+// Step 5.3:		set sum = 0
+// Step 5.4:		repeat for k = 0 to 2, sum += arr1[i][k] * arr2[k][j]
+// Step 5.5:		result[i][j] = sum
+// Step 6: 	Stop
+
 int main() {
     int arr1[M][N] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     int arr2[M][N] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};

@@ -9,14 +9,21 @@
 //1. Bubble Sort
 //easiest sorting technique
 //based on the theory of bigger bubbles settling on the surface faster than the smaller ones
-//[gemini give visual representation]
 //Element at each index is compared with next elements and bigger element is pushed towards the end part of the unsorted array
-//[gemini give visual representation and example of arrray sorted using bubble sort]
+//
+// Algo: bubbleSort(arr, n)
+// Step 0: 	Start
+// Step 1: 	repeat Step 2 and 3 for i = 0 to n-1
+// Step 2: 	repeat Step 3 for j = 0 to n-i-1
+// Step 3: 	if arr[j] > arr[j+1], then
+// Step 3.1:		swap(arr[j], arr[j+1])
+// Step 4: 	end if
+// Step 5: 	Stop
 
 void bubbleSort(int arr[], int n){
     for (int i = 0; i < n-1; i++)
     {
-        //i -> for iteration upto n which leads to complete sorting[gemini give some light on this]
+        //i -> for iteration upto n which leads to complete sorting
         //j -> to traverse among the elements of the array
         for (int j = 0; j < n-i-1; j++)
         {

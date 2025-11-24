@@ -7,6 +7,18 @@
 //To sort an array of size n in ascending order, iterate over the array and compare the current element(key) to its predecesor
 //if the key is smaller than it's predecessor, compare it with the elements before
 //Move the greater elements one position up to make space for swapped element
+//
+// Algo: insertionSort(arr, n)
+// Step 0: 	Start
+// Step 1: 	repeat Step 2 to 5 for i = 1 to n-1
+// Step 2: 	set key = arr[i]
+// Step 3: 	set j = i - 1
+// Step 4: 	while j >= 0 AND arr[j] > key, do
+// Step 4.1:		arr[j+1] = arr[j]
+// Step 4.2:		j = j - 1
+// Step 5: 	end while
+// Step 6: 	arr[j+1] = key
+// Step 7: 	Stop
 
 void insertionSort(int arr[], int n){
     int key;

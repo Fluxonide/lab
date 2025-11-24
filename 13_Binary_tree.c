@@ -1,3 +1,74 @@
+//Algorithm 
+// Algo: preorder_traversal(current)
+// Step 0: 	Start
+// Step 1: 	display(current.data)
+// Step 2:	if current.l_child != NULL, then
+// Step 2.1:		preorder_traversal(current.l_child)
+// Step 3: 	end if
+// Step 4:	if current.r_child !=NULL) 
+// Step 4.1:		preorder_traversal(current.r_child)
+// Step 5:	end if
+// Step 6:	Stop
+//
+// Algo: inorder_traversal(current)
+// Step 0: 	Start
+// Step 1:	if current.l_child != NULL, then
+// Step 1.1:		inorder_traversal(current.l_child)
+// Step 2: 	end if
+// Step 3: 	display(current.data)
+// Step 4:	if current.r_child !=NULL) 
+// Step 4.1:		inorder_traversal(current.r_child)
+// Step 5:	end if
+// Step 6:	Stop
+//
+// Algo: postorder_traversal(current)
+// Step 0: 	Start
+// Step 1:	if current.l_child != NULL, then
+// Step 1.1:		postorder_traversal(current.l_child)
+// Step 2: 	end if
+// Step 3:	if current.r_child !=NULL) 
+// Step 3.1:		postorder_traversal(current.r_child)
+// Step 4:	end if
+// Step 5: 	display(current.data)
+// Step 6:	Stop
+//
+// Algo: insertLeft(parent, value)
+// Step 0: 	Start
+// Step 1: 	if parent.l_child == NULL, then
+// Step 1.1:		create new node with value
+// Step 1.2:		parent.l_child = new node
+// Step 2: 	else
+// Step 2.1:		display "Left child already exists"
+// Step 3: 	end if
+// Step 4: 	Stop
+//
+// Algo: insertRight(parent, value)
+// Step 0: 	Start
+// Step 1: 	if parent.r_child == NULL, then
+// Step 1.1:		create new node with value
+// Step 1.2:		parent.r_child = new node
+// Step 2: 	else
+// Step 2.1:		display "Right child already exists"
+// Step 3: 	end if
+// Step 4: 	Stop
+//
+// Algo: deleteLeaf(parent, value)
+// Step 0: 	Start
+// Step 1: 	if parent == NULL, Stop
+// Step 2: 	if parent.l_child is target AND is leaf
+// Step 2.1:		delete parent.l_child
+// Step 2.2:		parent.l_child = NULL
+// Step 2.3:		Stop
+// Step 3: 	if parent.r_child is target AND is leaf
+// Step 3.1:		delete parent.r_child
+// Step 3.2:		parent.r_child = NULL
+// Step 3.3:		Stop
+// Step 4: 	deleteLeaf(parent.l_child, value)
+// Step 5: 	deleteLeaf(parent.r_child, value)
+// Step 6: 	Stop
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

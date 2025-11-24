@@ -11,6 +11,49 @@
 #include <stdlib.h>
 #define size 10
 
+#define size 10
+//
+// Algo: insert(arr, U, data, index)
+// Step 0: 	Start
+// Step 1: 	if *U >= size, print "Full"
+// Step 2: 	else
+// Step 2.1:		set i = *U - 1
+// Step 2.2:		while i >= index, arr[i+1] = arr[i], i--
+// Step 2.3:		arr[index] = data, (*U)++
+// Step 3: 	Stop
+//
+// Algo: delete(arr, U, ele)
+// Step 0: 	Start
+// Step 1: 	if *U <= 0, print "Empty"
+// Step 2: 	else
+// Step 2.1:		find index i of ele
+// Step 2.2:		if not found, return
+// Step 2.3:		while i < *U - 1, arr[i] = arr[i+1], i++
+// Step 2.4:		(*U)--
+// Step 3: 	Stop
+//
+// Algo: merge(arr1, arr2, U1, U2)
+// Step 0: 	Start
+// Step 1: 	set total_size = *U1 + *U2, i = *U1, j = 0
+// Step 2: 	while i < total_size, arr1[i] = arr2[j], i++, j++
+// Step 3: 	*U1 = total_size
+// Step 4: 	Stop
+//
+// Algo: search(arr, U, data)
+// Step 0: 	Start
+// Step 1: 	set i = 0
+// Step 2: 	while i < U
+// Step 2.1:		if arr[i] == data, print "Found at index i"
+// Step 2.2:		i++
+// Step 3: 	Stop
+//
+// Algo: bubbleSort(arr, U)
+// Step 0: 	Start
+// Step 1: 	repeat for i = 0 to U-2
+// Step 2: 	repeat for j = 0 to U-i-2
+// Step 3: 	if arr[j] > arr[j+1], swap(arr[j], arr[j+1])
+// Step 4: 	Stop
+
 void insert(int arr[], int* U, int data, int index){
     if (*U>=size)
     {

@@ -12,6 +12,27 @@ struct node* createNode(int data) {
     newNode->left = newNode->right = NULL;
     return newNode;
 }
+//
+// Algo: insert(root, data)
+// Step 0: 	Start
+// Step 1: 	if root == NULL, return createNode(data)
+// Step 2: 	if data < root.data, root.left = insert(root.left, data)
+// Step 3: 	else if data > root.data, root.right = insert(root.right, data)
+// Step 4: 	return root
+// Step 5: 	Stop
+//
+// Algo: delete(root, key)
+// Step 0: 	Start
+// Step 1: 	if root == NULL, return root
+// Step 2: 	if key < root.data, root.left = delete(root.left, key)
+// Step 3: 	else if key > root.data, root.right = delete(root.right, key)
+// Step 4: 	else
+// Step 4.1:		if root.left == NULL AND root.right == NULL, free(root), return NULL
+// Step 4.2:		else if root.left == NULL, temp = root.right, free(root), return temp
+// Step 4.3:		else if root.right == NULL, temp = root.left, free(root), return temp
+// Step 4.4:		else, temp = findMin(root.right), root.data = temp.data, root.right = delete(root.right, temp.data)
+// Step 5: 	return root
+// Step 6: 	Stop
 
 struct node* insert(struct node* root, int data) {
     if (root == NULL)
